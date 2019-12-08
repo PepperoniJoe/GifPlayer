@@ -12,7 +12,7 @@ extension UIImage {
   
   //--------------------------------------------------
   //MARK: Preferred: Get GIF files from Assets catalog
-  func gif(asset: String) -> UIImage? {
+  static func gif(asset: String) -> UIImage? {
     guard let dataAsset = NSDataAsset(name: asset) else {
       print("SwiftGif: Cannot turn image named \"\(asset)\" into NSDataAsset")
       return nil
@@ -24,7 +24,7 @@ extension UIImage {
   
   //--------------------------------------------------
   //MARK: Alternative: Get GIF files from target file
-  func gif(name: String) -> UIImage? {
+  static func gif(name: String) -> UIImage? {
     // Check for existance of gif
     guard let bundleURL = Bundle.main
       .url(forResource: name, withExtension: "gif") else {
@@ -44,7 +44,7 @@ extension UIImage {
   
   //--------------------------------------------------
   //MARK: Convert GIF into multiple images for iOS animated image
-  func gif(data: Data) -> UIImage? {
+  static func gif(data: Data) -> UIImage? {
     // Create source from data
     guard let source  = CGImageSourceCreateWithData(data as CFData, nil) else {
       print("Source for the image does not exist")
@@ -55,8 +55,8 @@ extension UIImage {
   
   
 //--------------------------------------------------
-//MARK:
-  func animatedImageWithSource(_ source: CGImageSource) -> UIImage? {
+//MARK: Convert gif to animation
+  static func animatedImageWithSource(_ source: CGImageSource) -> UIImage? {
 
     var images = [CGImage]()
     var delays = [Int]()
@@ -76,6 +76,7 @@ extension UIImage {
       
       // Create a delay for each image
       let delaySeconds = delayForImageAtIndex(Int(index), source: source)
+      //  print("delaySeconds", delaySeconds)
       delays.append(Int(delaySeconds * 1000.0)) // Seconds to ms
     }
     
@@ -83,35 +84,25 @@ extension UIImage {
     
     // Get frames
     for index in 0..<count {
-      frame = UIImage(cgImage: images[Int(index)])
-      frameCount = Int(delays[Int(index)] / gcd)
-      
+      frame = UIImage(cgImage: images[index])
+      frameCount = delays[index] / gcd
+    //  print(frameCount) // Always 1???????????????????
       for _ in 0..<frameCount {
         frames.append(frame)
       }
     }
     
-    // Calculate full duration
-    let duration: Int = {
-      var sum = 0
-      
-      for val: Int in delays {
-        sum += val
-      }
-      
-      return sum
-    }()
-    
+    // Calculate full duration in millisecs
+    let duration = Double(delays.reduce(0, + )) / 1000.0
+  
     // Create Animation
-    
-    let animation = UIImage.animatedImage(with: frames, duration: Double(duration) / 1000.0)
-    return animation
+    return UIImage.animatedImage(with: frames, duration: duration)
   }
   
   
   //--------------------------------------------------
   //MARK:
-  func delayForImageAtIndex(_ index: Int, source: CGImageSource!) -> Double {
+  static func delayForImageAtIndex(_ index: Int, source: CGImageSource) -> Double {
     var delay = 0.1
     
     // Get dictionaries
@@ -152,7 +143,7 @@ extension UIImage {
   //--------------------------------------------------
   //MARK: Gets greatest common denominator
     
-    func gcdForArray(_ array: [Int]) -> Int {
+    static func gcdForArray(_ array: [Int]) -> Int {
       if array.isEmpty { return 1 }
       
       var gcd = array[0]
@@ -165,7 +156,7 @@ extension UIImage {
     }
     
     
-    func gcdForPair(_ lhs: Int, _ rhs: Int) -> Int {
+    static func gcdForPair(_ lhs: Int, _ rhs: Int) -> Int {
         let remainder = lhs % rhs
         return remainder != 0 ? gcdForPair(rhs, remainder) : rhs
     }

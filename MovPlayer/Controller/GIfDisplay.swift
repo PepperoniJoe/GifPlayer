@@ -21,7 +21,7 @@ struct GifDisplay {
   
   func displayGif(
     imageView        : UIImageView,
-    gifName          : String,
+    name             : String,
     stillImageNumber : Int                = 1,
     bgColor          : UIColor            = .clear,
     contentMode      : UIView.ContentMode = .scaleAspectFit,
@@ -29,7 +29,8 @@ struct GifDisplay {
     speed            : Double             = 1) {
     
     //let gif = UIImage.gif(asset: gif)
-    let gif = UIImage.gif(asset: gifName)
+    let gif = UIImage.gif(asset: name)
+
     imageView.contentMode          = contentMode
     imageView.backgroundColor      = bgColor
     imageView.animationImages      = gif?.images
@@ -38,6 +39,7 @@ struct GifDisplay {
     let duration = gif?.duration ?? 4 
     imageView.animationDuration    = duration / speed
   
+    // get still image for animation
     if stillImageNumber > 0 {
       let stillImageIndex = stillImageNumber - 1
       if imageView.animationImages?.count ?? 0 > stillImageIndex {

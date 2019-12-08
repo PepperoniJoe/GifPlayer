@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     for i in 0..<gifData.count {
       display.displayGif(imageView        : gifs[i],
-                         gif              : gifData[i].name,
+                         name             : gifData[i].name,
                          stillImageNumber : gifData[i].stillImageNumber,
                          bgColor          : gifData[i].bgColor,
                          contentMode      : gifData[i].contentMode,
