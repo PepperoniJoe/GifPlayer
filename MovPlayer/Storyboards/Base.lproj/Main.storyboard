@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MovPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ke7-Hu-6l4" userLabel="VerticalStack">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="w3c-Bw-8RV">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="160.5"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lGg-9d-c5C">
+                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="160.5"/>
+                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="snV-Nu-cKU">
+                                                <rect key="frame" x="125.5" y="0.0" width="124" height="160.5"/>
+                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <imageView tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fAu-yD-P0k">
+                                                <rect key="frame" x="251.5" y="0.0" width="123.5" height="160.5"/>
+                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="3fj-6X-Esy">
+                                        <rect key="frame" x="0.0" y="162.5" width="375" height="160"/>
+                                        <subviews>
+                                            <imageView tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bsz-jd-6yY">
+                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="160"/>
+                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <imageView tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YMS-cS-JyA">
+                                                <rect key="frame" x="125.5" y="0.0" width="124" height="160"/>
+                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <imageView tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OSC-fe-Oaj">
+                                                <rect key="frame" x="251.5" y="0.0" width="123.5" height="160"/>
+                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="gfH-9i-Qfy">
+                                        <rect key="frame" x="0.0" y="324.5" width="375" height="160.5"/>
+                                        <subviews>
+                                            <imageView tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="338-IJ-gpg">
+                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="160.5"/>
+                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <imageView tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jHY-oz-vRd">
+                                                <rect key="frame" x="125.5" y="0.0" width="124" height="160.5"/>
+                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <imageView tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lmr-4Z-OaV">
+                                                <rect key="frame" x="251.5" y="0.0" width="123.5" height="160.5"/>
+                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="UcX-qJ-KBz">
+                                        <rect key="frame" x="0.0" y="487" width="375" height="160"/>
+                                        <subviews>
+                                            <imageView tag="9" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vef-Le-rAV">
+                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="160"/>
+                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <imageView tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H6y-r6-p0O">
+                                                <rect key="frame" x="125.5" y="0.0" width="124" height="160"/>
+                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <imageView tag="11" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6z4-rc-fv3">
+                                                <rect key="frame" x="251.5" y="0.0" width="123.5" height="160"/>
+                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ke7-Hu-6l4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Akq-UW-3oP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ke7-Hu-6l4" secondAttribute="bottom" id="Cjz-YI-Y6X"/>
+                            <constraint firstItem="Ke7-Hu-6l4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tp4-Um-E4L"/>
+                            <constraint firstItem="Ke7-Hu-6l4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iO0-KJ-laJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="gifs" destination="lGg-9d-c5C" collectionClass="NSMutableArray" id="6KX-hA-j3J"/>
+                        <outletCollection property="gifs" destination="snV-Nu-cKU" collectionClass="NSMutableArray" id="ewu-Z0-bjf"/>
+                        <outletCollection property="gifs" destination="fAu-yD-P0k" collectionClass="NSMutableArray" id="4Mp-kS-NmZ"/>
+                        <outletCollection property="gifs" destination="Bsz-jd-6yY" collectionClass="NSMutableArray" id="sfX-ax-Z7G"/>
+                        <outletCollection property="gifs" destination="YMS-cS-JyA" collectionClass="NSMutableArray" id="L4a-Vp-wts"/>
+                        <outletCollection property="gifs" destination="OSC-fe-Oaj" collectionClass="NSMutableArray" id="Q8H-Vw-e6a"/>
+                        <outletCollection property="gifs" destination="338-IJ-gpg" collectionClass="NSMutableArray" id="5U8-9B-LHe"/>
+                        <outletCollection property="gifs" destination="jHY-oz-vRd" collectionClass="NSMutableArray" id="Mj5-mh-pGf"/>
+                        <outletCollection property="gifs" destination="lmr-4Z-OaV" collectionClass="NSMutableArray" id="25r-EK-W6a"/>
+                        <outletCollection property="gifs" destination="Vef-Le-rAV" collectionClass="NSMutableArray" id="Ord-wj-ykT"/>
+                        <outletCollection property="gifs" destination="H6y-r6-p0O" collectionClass="NSMutableArray" id="Hyo-Ht-SHd"/>
+                        <outletCollection property="gifs" destination="6z4-rc-fv3" collectionClass="NSMutableArray" id="dng-BH-o1J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
