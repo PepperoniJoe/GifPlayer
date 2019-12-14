@@ -24,7 +24,7 @@ class ViewController: UIViewController {
   
   private func buildAllImageViews() {
     
-    for i in 0..<gifData.count {
+    for i in 0..<gifs.count {
       display.displayGif(imageView        : gifs[i],
                          name             : gifData[i].name,
                          stillImageNumber : gifData[i].stillImageNumber,

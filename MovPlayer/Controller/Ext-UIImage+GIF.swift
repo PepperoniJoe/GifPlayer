@@ -1,24 +1,26 @@
 //
-//  Gif.swift
-//  SwiftGif
+//  Ext-UIImage+GIF.swift
+//  MovPlayer
 //
 //  Created by Arne Bahlo on 07.06.14.
 //  Copyright (c) 2014 Arne Bahlo. All rights reserved.
+//  Updated for Swift 5 by Marcy Vernon
 //
 import UIKit
 import ImageIO
 
+//MARK: Extension for creating animated images from GIF files
 extension UIImage {
   
   //--------------------------------------------------
   //MARK: Preferred: Get GIF files from Assets catalog
   static func gif(asset: String) -> UIImage? {
     guard let dataAsset = NSDataAsset(name: asset) else {
-      print("SwiftGif: Cannot turn image named \"\(asset)\" into NSDataAsset")
+      print("SwiftGif: Cannot turn image named \"\(asset)\" into NSDataAsset. Check file spelling and case.")
       return nil
     }
     
-    return gif(data: dataAsset.data)
+    return createAnimatedImage(data: dataAsset.data)
   } // end of static func gif:asset:
   
   
@@ -38,30 +40,22 @@ extension UIImage {
       return nil
     }
     
-    return gif(data: imageData)
+    return createAnimatedImage(data: imageData)
   } // end of static func gif:name:
   
   
   //--------------------------------------------------
   //MARK: Convert GIF into multiple images for iOS animated image
-  static func gif(data: Data) -> UIImage? {
+  static func createAnimatedImage(data: Data) -> UIImage? {
     // Create source from data
     guard let source  = CGImageSourceCreateWithData(data as CFData, nil) else {
       print("Source for the image does not exist")
       return nil
     }
-    return animatedImageWithSource(source)
-  } // end of static func gif:data:
-  
-  
-//--------------------------------------------------
-//MARK: Convert gif to animation
-  static func animatedImageWithSource(_ source: CGImageSource) -> UIImage? {
 
     var images = [CGImage]()
     var delays = [Int]()
     var frames = [UIImage]()
-    
     let count = CGImageSourceGetCount(source)
 
     var frame: UIImage
@@ -76,15 +70,18 @@ extension UIImage {
       
       // Create a delay for each image
       let delaySeconds = delayForImageAtIndex(Int(index), source: source)
-      //  print("delaySeconds", delaySeconds)
+   //   print("delaySeconds", delaySeconds)
       delays.append(Int(delaySeconds * 1000.0)) // Seconds to ms
+    //  print(delays)
     }
     
     let gcd = gcdForArray(delays)
     
     // Get frames
     for index in 0..<count {
+      //  print("images:", images[index])
       frame = UIImage(cgImage: images[index])
+     //   print("frame:", frame)
       frameCount = delays[index] / gcd
     //  print(frameCount) // Always 1???????????????????
       for _ in 0..<frameCount {
@@ -107,11 +104,14 @@ extension UIImage {
     
     // Get dictionaries
     let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil)
+ //   print("cfProperties", cfProperties)
     let gifPropertiesPointer = UnsafeMutablePointer<UnsafeRawPointer?>.allocate(capacity: 0)
     defer {
       gifPropertiesPointer.deallocate()
     }
+    
     let unsafePointer = Unmanaged.passUnretained(kCGImagePropertyGIFDictionary).toOpaque()
+    
     if CFDictionaryGetValueIfPresent(cfProperties, unsafePointer, gifPropertiesPointer) == false {
       return delay
     }
@@ -124,11 +124,8 @@ extension UIImage {
                            Unmanaged.passUnretained(kCGImagePropertyGIFUnclampedDelayTime).toOpaque()),
       to: AnyObject.self)
     
-    /* CFDictionary implements a container which pairs pointer-sized keys with pointer-sizeed values. Values are accessed via arbitrary user-defined keys.
-     */
     if delayObject.doubleValue == 0 {
-      delayObject = unsafeBitCast(CFDictionaryGetValue(gifProperties,
-                    Unmanaged.passUnretained(kCGImagePropertyGIFDelayTime).toOpaque()), to: AnyObject.self)
+      delayObject = unsafeBitCast(CFDictionaryGetValue(gifProperties, Unmanaged.passUnretained(kCGImagePropertyGIFDelayTime).toOpaque()), to: AnyObject.self)
     }
     
     if let delayObject = delayObject as? Double, delayObject > 0 {
@@ -160,7 +157,5 @@ extension UIImage {
         let remainder = lhs % rhs
         return remainder != 0 ? gcdForPair(rhs, remainder) : rhs
     }
-    
-
 } // end of extension
 
