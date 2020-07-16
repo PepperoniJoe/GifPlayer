@@ -19,12 +19,15 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     buildAllImageViews()
     addTapGestures()
+    
   }
 
   
   private func buildAllImageViews() {
     
-    for i in 0..<gifs.count {
+    let count = gifs.count > gifData.count ? gifData.count : gifs.count
+    
+    for i in 0..<count {
       display.displayGif(imageView        : gifs[i],
                          name             : gifData[i].name,
                          stillImageNumber : gifData[i].stillImageNumber,
@@ -49,5 +52,7 @@ class ViewController: UIViewController {
     tappedGif.isAnimating ? tappedGif.stopAnimating() : tappedGif.startAnimating()
   }
 }
+
+
 
 

@@ -4,7 +4,7 @@
 //
 //  Created by Arne Bahlo on 07.06.14.
 //  Copyright (c) 2014 Arne Bahlo. All rights reserved.
-//  Updated for Swift 5 by Marcy Vernon
+//  Updated for Swift 5 and modified by Marcy Vernon
 //
 import UIKit
 import ImageIO
@@ -34,10 +34,13 @@ extension UIImage {
         return nil
     }
     
-    // Validate data
-    guard let imageData = try? Data(contentsOf: bundleURL) else {
-      print("Cannot turn gif named \"\(name)\" into Data. Check file spelling and case.")
-      return nil
+    var imageData = Data()
+    
+    do {
+        imageData = try Data(contentsOf: bundleURL)
+    } catch let error {
+        print(error.localizedDescription)
+        return nil
     }
     
     return createAnimatedImage(data: imageData)
@@ -53,10 +56,10 @@ extension UIImage {
       return nil
     }
 
-    var frames = [UIImage]()
-    let count = CGImageSourceGetCount(source)
+    var frames       = [UIImage]()
+    let count        = CGImageSourceGetCount(source)
     let delaySeconds = delayForImageAtIndex(0, source: source)
-    let duration = Double(count) * delaySeconds
+    let duration     = Double(count) * delaySeconds
     
     // Build array with images
     for index in 0..<count {
@@ -79,8 +82,6 @@ extension UIImage {
             delay = Double(truncating: delayTime as? NSNumber ?? 0.1)
         }
     }
-    
-    //print("the image delay is: \(delay)")
     return delay
   }
   

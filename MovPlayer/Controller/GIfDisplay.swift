@@ -28,7 +28,7 @@ struct GifDisplay {
     loops            : Int                = 1,
     speed            : Double             = 1) {
     
-    //let gif = UIImage.gif(asset: gif)
+   // let gif = UIImage.gif(name: name)
     let gif = UIImage.gif(asset: name)
 
     imageView.contentMode          = contentMode
@@ -36,7 +36,7 @@ struct GifDisplay {
     imageView.animationImages      = gif?.images
     imageView.animationRepeatCount = loops
     
-    let duration = gif?.duration ?? 4 
+    let duration = gif?.duration ?? 4
     imageView.animationDuration    = duration / speed
   
     // get still image for animation
