@@ -2,9 +2,8 @@
 //  Ext-UIImage+GIF.swift
 //  MovPlayer
 //
-//  Created by Arne Bahlo on 07.06.14.
-//  Copyright (c) 2014 Arne Bahlo. All rights reserved.
-//  Updated for Swift 5 and modified by Marcy Vernon
+//  Created by Marcy Vernon on 10/31/19.
+//  Copyright © 2019 Marcy Vernon. All rights reserved.
 //
 import UIKit
 import ImageIO
@@ -12,8 +11,7 @@ import ImageIO
 //MARK: Extension for creating animated images from GIF files
 extension UIImage {
   
-  //--------------------------------------------------
-  //MARK: Preferred: Get GIF files from Assets catalog
+  //MARK: - Preferred: Get GIF files from Assets catalog
   static func gif(asset: String) -> UIImage? {
     guard let dataAsset = NSDataAsset(name: asset) else {
       print("Cannot turn image named \"\(asset)\" into NSDataAsset. Check file spelling and case.")
@@ -24,8 +22,7 @@ extension UIImage {
   } // end of static func gif:asset:
   
   
-  //--------------------------------------------------
-  //MARK: Alternative: Get GIF files from target file
+  //MARK: - Alternative: Get GIF files from target file
   static func gif(name: String) -> UIImage? {
     // Check for existance of gif
     guard let bundleURL = Bundle.main
@@ -47,8 +44,7 @@ extension UIImage {
   } // end of static func gif:name:
   
   
-  //--------------------------------------------------
-  //MARK: Convert GIF into multiple images for iOS animated image
+  //MARK: - Convert GIF into multiple images for iOS animated image
   private static func createAnimatedImage(data: Data) -> UIImage? {
     // Create source from data
     guard let source  = CGImageSourceCreateWithData(data as CFData, nil) else {
@@ -71,8 +67,8 @@ extension UIImage {
     return UIImage.animatedImage(with: frames, duration: duration)
   }
   
-  //--------------------------------------------------
-  //MARK: Get delay time from GIF properties
+
+  //MARK: - Get delay time from GIF properties
   private static func delayForImageAtIndex(_ index: Int, source: CGImageSource) -> Double {
     
     var delay = 0.1 // Default time

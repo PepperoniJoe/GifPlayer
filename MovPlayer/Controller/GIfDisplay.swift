@@ -11,12 +11,12 @@ import UIKit
 struct GifDisplay {
   /*
    Parameters:
-   * imageView - View that will display GIF
-   * gif - Name of the gif file. Do not include .gif file extension in name.
-   * stillImageNumber - Optional integer that designates one image in the gif to use as the still image. This number corresponds to the image in the file, NOT THE INDEX. Default is 1, the first image.
-   * bgColor - Background color of the imageView. Default is .clear
-   * contentMode - Determines how the Gif should be scaled within the UIImageView. Default is .scaleAspectFit.
-   * loops - Number of times the gif should play. Use 0 to loop infinitely. Default is 1 to play once.
+   > imageView - View that will display GIF
+   > gif - Name of the gif file. Do not include .gif file extension in name.
+   > stillImageNumber - Optional integer that designates one image in the gif to use as the still image. This number corresponds to the image in the file, NOT THE INDEX. Default is 1, the first image.
+   > bgColor - Background color of the imageView. Default is .clear
+   > contentMode - Determines how the Gif should be scaled within the UIImageView. Default is .scaleAspectFit.
+   > loops - Number of times the gif should play. Use 0 to loop infinitely. Default is 1 to play once.
    */
   
   func displayGif(
