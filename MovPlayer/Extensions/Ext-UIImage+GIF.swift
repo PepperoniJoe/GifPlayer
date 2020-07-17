@@ -9,6 +9,7 @@ import UIKit
 import ImageIO
 
 //MARK: Extension for creating animated images from GIF files
+
 extension UIImage {
   
   //MARK: - Preferred: Get GIF files from Assets catalog
@@ -19,10 +20,12 @@ extension UIImage {
     }
     
     return createAnimatedImage(data: dataAsset.data)
-  } // end of static func gif:asset:
+  } // end of static func gif(asset:)
   
   
+    
   //MARK: - Alternative: Get GIF files from target file
+    
   static func gif(name: String) -> UIImage? {
     // Check for existance of gif
     guard let bundleURL = Bundle.main
@@ -41,10 +44,12 @@ extension UIImage {
     }
     
     return createAnimatedImage(data: imageData)
-  } // end of static func gif:name:
+  } // end of static func gif(name:)
   
   
+    
   //MARK: - Convert GIF into multiple images for iOS animated image
+    
   private static func createAnimatedImage(data: Data) -> UIImage? {
     // Create source from data
     guard let source  = CGImageSourceCreateWithData(data as CFData, nil) else {
@@ -63,12 +68,15 @@ extension UIImage {
         frames.append(UIImage(cgImage: image))
       }
     }
+    
     // Create Animation
     return UIImage.animatedImage(with: frames, duration: duration)
-  }
+  } // end of static func createAnimatedImage(data:)
   
+    
 
   //MARK: - Get delay time from GIF properties
+    
   private static func delayForImageAtIndex(_ index: Int, source: CGImageSource) -> Double {
     
     var delay = 0.1 // Default time
@@ -79,7 +87,7 @@ extension UIImage {
         }
     }
     return delay
-  }
+  }  // end of static func delayForImageAtIndex(_ index: source:)
   
 } // end of extension
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MultipleViewController: UIViewController {
   
   private let gifData = AppData().gifData
   private let display = GifDisplay()
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     buildAllImageViews()
     addTapGestures()
-    
   }
 
   

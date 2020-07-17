@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9353A6B923739FE400611ABD /* Gifs.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9353A6B823739FE400611ABD /* Gifs.xcassets */; };
+		9359CE6A24C2329C00DCD5A1 /* SingleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359CE6924C2329C00DCD5A1 /* SingleCell.swift */; };
 		938F25A92460D131004A890C /* GifDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938F25A82460D131004A890C /* GifDisplay.swift */; };
+		938F939D24C1869300CC2284 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938F939C24C1869300CC2284 /* SingleViewController.swift */; };
 		93B46173237110B80088AE41 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B46172237110B80088AE41 /* AppData.swift */; };
 		93DEEEC2236BC0B200F92D38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEEEC1236BC0B200F92D38 /* AppDelegate.swift */; };
 		93DEEEC4236BC0B200F92D38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEEEC3236BC0B200F92D38 /* ViewController.swift */; };
@@ -20,7 +22,9 @@
 
 /* Begin PBXFileReference section */
 		9353A6B823739FE400611ABD /* Gifs.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Gifs.xcassets; sourceTree = "<group>"; };
+		9359CE6924C2329C00DCD5A1 /* SingleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCell.swift; sourceTree = "<group>"; };
 		938F25A82460D131004A890C /* GifDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifDisplay.swift; sourceTree = "<group>"; };
+		938F939C24C1869300CC2284 /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
 		93B46172237110B80088AE41 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		93DEEEBE236BC0B200F92D38 /* MovPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DEEEC1236BC0B200F92D38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 			children = (
 				93DEEEC3236BC0B200F92D38 /* ViewController.swift */,
 				938F25A82460D131004A890C /* GifDisplay.swift */,
+				938F939C24C1869300CC2284 /* SingleViewController.swift */,
+				9359CE6924C2329C00DCD5A1 /* SingleCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,7 +157,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Marcy Vernon";
 				TargetAttributes = {
 					93DEEEBD236BC0B200F92D38 = {
@@ -196,10 +202,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938F939D24C1869300CC2284 /* SingleViewController.swift in Sources */,
 				93DEEED7236BCB0D00F92D38 /* Ext-UIImage+GIF.swift in Sources */,
 				938F25A92460D131004A890C /* GifDisplay.swift in Sources */,
 				93DEEEC4236BC0B200F92D38 /* ViewController.swift in Sources */,
 				93DEEEC2236BC0B200F92D38 /* AppDelegate.swift in Sources */,
+				9359CE6A24C2329C00DCD5A1 /* SingleCell.swift in Sources */,
 				93B46173237110B80088AE41 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +260,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -277,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -314,6 +323,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -333,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -355,7 +365,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MarcyVernon.MovPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = test.mv.MovPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -373,7 +383,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MarcyVernon.MovPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = test.mv.MovPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
