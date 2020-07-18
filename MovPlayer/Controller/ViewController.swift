@@ -22,6 +22,7 @@ class MultipleViewController: UIViewController {
   }
 
   
+  // Create each gif based on image and other data provided.
   private func buildAllImageViews() {
     
     let count = gifs.count > gifData.count ? gifData.count : gifs.count
@@ -38,19 +39,21 @@ class MultipleViewController: UIViewController {
   }
   
   
+// Add ability to tap each gif.
   private func addTapGestures() {
-    
     for gif in gifs {
       let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
       gif.addGestureRecognizer(tap)
     }
   }
   
+    
+ // Toggle the gif's animation on and off with a tap
   @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
     let tappedGif = gifs[sender?.view?.tag ?? 0]
     tappedGif.isAnimating ? tappedGif.stopAnimating() : tappedGif.startAnimating()
   }
-}
+}  // end of MultipleViewController
 
 
 
