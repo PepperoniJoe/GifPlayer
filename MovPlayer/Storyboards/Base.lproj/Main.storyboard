@@ -2,9 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w1Q-6Z-tiD">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -27,15 +27,15 @@
                                         <subviews>
                                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lGg-9d-c5C">
                                                 <rect key="frame" x="0.0" y="0.0" width="123.5" height="153"/>
-                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
                                             </imageView>
                                             <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="snV-Nu-cKU">
                                                 <rect key="frame" x="125.5" y="0.0" width="124" height="153"/>
-                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
                                             </imageView>
                                             <imageView tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fAu-yD-P0k">
                                                 <rect key="frame" x="251.5" y="0.0" width="123.5" height="153"/>
-                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -44,15 +44,15 @@
                                         <subviews>
                                             <imageView tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bsz-jd-6yY">
                                                 <rect key="frame" x="0.0" y="0.0" width="123.5" height="153"/>
-                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
                                             </imageView>
                                             <imageView tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YMS-cS-JyA">
                                                 <rect key="frame" x="125.5" y="0.0" width="124" height="153"/>
-                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
                                             </imageView>
                                             <imageView tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OSC-fe-Oaj">
                                                 <rect key="frame" x="251.5" y="0.0" width="123.5" height="153"/>
-                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -61,15 +61,15 @@
                                         <subviews>
                                             <imageView tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="338-IJ-gpg">
                                                 <rect key="frame" x="0.0" y="0.0" width="123.5" height="153"/>
-                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
                                             </imageView>
                                             <imageView tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jHY-oz-vRd">
                                                 <rect key="frame" x="125.5" y="0.0" width="124" height="153"/>
-                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
                                             </imageView>
                                             <imageView tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lmr-4Z-OaV">
                                                 <rect key="frame" x="251.5" y="0.0" width="123.5" height="153"/>
-                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -78,15 +78,15 @@
                                         <subviews>
                                             <imageView tag="9" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vef-Le-rAV">
                                                 <rect key="frame" x="0.0" y="0.0" width="123.5" height="153"/>
-                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
                                             </imageView>
                                             <imageView tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H6y-r6-p0O">
                                                 <rect key="frame" x="125.5" y="0.0" width="124" height="153"/>
-                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
                                             </imageView>
                                             <imageView tag="11" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6z4-rc-fv3">
                                                 <rect key="frame" x="251.5" y="0.0" width="123.5" height="153"/>
-                                                <color key="backgroundColor" red="0.27909085150000001" green="0.68712359670000001" blue="0.94557327030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -95,6 +95,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AccentColor "/>
                         <constraints>
                             <constraint firstItem="Ke7-Hu-6l4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Akq-UW-3oP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ke7-Hu-6l4" secondAttribute="bottom" id="Cjz-YI-Y6X"/>
@@ -151,8 +152,10 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CrH-P4-YDN">
                                                     <rect key="frame" x="0.0" y="0.0" width="372" height="618"/>
+                                                    <color key="tintColor" name="AccentColor "/>
                                                 </imageView>
                                             </subviews>
+                                            <color key="tintColor" name="AccentColor "/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="CrH-P4-YDN" secondAttribute="bottom" id="DEc-6z-i2P"/>
                                                 <constraint firstAttribute="trailing" secondItem="CrH-P4-YDN" secondAttribute="trailing" id="HxH-Do-9Oa"/>
@@ -160,6 +163,7 @@
                                                 <constraint firstItem="CrH-P4-YDN" firstAttribute="leading" secondItem="VZ7-tp-2Ho" secondAttribute="leading" id="vIz-Tu-4tT"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="tintColor" name="AccentColor "/>
                                         <size key="customSize" width="372" height="618"/>
                                         <connections>
                                             <outlet property="imageviewCell" destination="CrH-P4-YDN" id="aoh-DR-a1l"/>
@@ -170,6 +174,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YYn-vA-MsT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor "/>
                         <constraints>
                             <constraint firstItem="tiF-c5-DUT" firstAttribute="bottom" secondItem="YYn-vA-MsT" secondAttribute="bottom" id="Oym-Ca-BKo"/>
                             <constraint firstItem="tiF-c5-DUT" firstAttribute="top" secondItem="YYn-vA-MsT" secondAttribute="top" id="Soc-sg-cLK"/>
@@ -196,6 +201,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AccentColor "/>
+                        <color key="selectedImageTintColor" name="AccentColor "/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Mxz-HS-Uzm"/>
@@ -210,6 +217,9 @@
     <resources>
         <image name="square.fill" catalog="system" width="128" height="114"/>
         <image name="square.grid.3x3.fill" catalog="system" width="128" height="112"/>
+        <namedColor name="AccentColor ">
+            <color red="0.42399999499320984" green="0.35600000619888306" blue="0.5910000205039978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
