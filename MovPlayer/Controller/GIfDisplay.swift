@@ -39,7 +39,7 @@ struct GifDisplay {
     let duration = gif?.duration ?? 4
     imageView.animationDuration    = duration / speed
   
-    // get still image for animation
+    // get the still image for animation. Default uses the first image
     if stillImageNumber > 0 {
       let stillImageIndex = stillImageNumber - 1
       if imageView.animationImages?.count ?? 0 > stillImageIndex {
