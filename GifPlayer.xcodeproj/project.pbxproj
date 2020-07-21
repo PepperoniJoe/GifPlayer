@@ -11,6 +11,7 @@
 		932BD4C924C69A7E001DB280 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BD4C824C69A7E001DB280 /* CollectionViewController.swift */; };
 		932BD4CB24C69BFD001DB280 /* Grid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932BD4CA24C69BFD001DB280 /* Grid.storyboard */; };
 		932BD4CD24C69C09001DB280 /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932BD4CC24C69C09001DB280 /* Collection.storyboard */; };
+		932BD4CF24C6A95C001DB280 /* GifPlayer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 932BD4CE24C6A95C001DB280 /* GifPlayer.gif */; };
 		9359CE6A24C2329C00DCD5A1 /* SingleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359CE6924C2329C00DCD5A1 /* SingleCell.swift */; };
 		9384EF3724C42C40005C1D8E /* Gifs.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9384EF3624C42C3F005C1D8E /* Gifs.xcassets */; };
 		9384EF3B24C4E1C0005C1D8E /* Yesterday.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9384EF3A24C4E1C0005C1D8E /* Yesterday.gif */; };
@@ -30,6 +31,7 @@
 		932BD4C824C69A7E001DB280 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		932BD4CA24C69BFD001DB280 /* Grid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Grid.storyboard; sourceTree = "<group>"; };
 		932BD4CC24C69C09001DB280 /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
+		932BD4CE24C6A95C001DB280 /* GifPlayer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GifPlayer.gif; sourceTree = "<group>"; };
 		9359CE6924C2329C00DCD5A1 /* SingleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCell.swift; sourceTree = "<group>"; };
 		9384EF3624C42C3F005C1D8E /* Gifs.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Gifs.xcassets; sourceTree = "<group>"; };
 		9384EF3A24C4E1C0005C1D8E /* Yesterday.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Yesterday.gif; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		9384EF4024C50F37005C1D8E /* GitHub-Images */ = {
 			isa = PBXGroup;
 			children = (
+				932BD4CE24C6A95C001DB280 /* GifPlayer.gif */,
 			);
 			path = "GitHub-Images";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			files = (
 				9384EF3D24C50F2D005C1D8E /* LICENSE in Resources */,
 				93DEEECC236BC0B700F92D38 /* LaunchScreen.storyboard in Resources */,
+				932BD4CF24C6A95C001DB280 /* GifPlayer.gif in Resources */,
 				93DEEEC9236BC0B700F92D38 /* Assets.xcassets in Resources */,
 				9384EF3F24C50F33005C1D8E /* README.md in Resources */,
 				932BD4CB24C69BFD001DB280 /* Grid.storyboard in Resources */,
