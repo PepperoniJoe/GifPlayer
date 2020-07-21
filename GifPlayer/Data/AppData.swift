@@ -17,7 +17,7 @@ struct AppData {
       ("Owl"             , 1,  #colorLiteral(red            : 0.424493134, green            : 0.3560110629, blue            : 0.5905451179, alpha            : 1),     .scaleAspectFit,  0, 1),
       ("BlueMoon"        , 1,  .clear, .scaleToFill,     1, 1),
       ("Pig"             , 1,  #colorLiteral(red              : 0.5528588891, green              : 0.7616898417, blue              : 0.420261234, alpha              : 1),     .scaleAspectFit,  0, 1),
-      ("DesertAnimation3", 1,  .clear, .scaleToFill,     1, 1),
+      ("DesertAnimation3", 1,  .clear, .scaleToFill,     0, 1),//
       ("Chick2"          , 1,  #colorLiteral(red           : 0.424493134, green           : 0.3560110629, blue           : 0.5905451179, alpha           : 1),     .scaleAspectFill, 0, 1),
       ("DogRun"          , 1,  #colorLiteral(red : 0.2392156869, green : 0.6745098233, blue : 0.9686274529, alpha : 1),     .scaleAspectFit,  0, 2.5),
       ("Yesterday"       , 1,  #colorLiteral(red         : 0.5528588891, green         : 0.7616898417, blue         : 0.420261234, alpha         : 1),     .scaleAspectFit,  1, 1),

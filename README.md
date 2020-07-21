@@ -12,13 +12,12 @@ The player allows the following specifications: the content mode, number of loop
 color(if GIF has transparency), speed of animation and the image to use as the still image for the GIF. 
 
 
-
 **Keynote**\
 All the example GIF files of this app were created with Apple's Keynote including all artwork\
 and animations. Keynote's shimmer, jiggles and other special effects were used. Keynote's Magic Moves and\
 transitions were used to create endless scrolling landscapes, scrolling song lyrics and animal animations. 
 
-<img src="GitHub-Images/GifPlayer.gif" width="300">
+<img src="GitHub-Images/GifPlayer.gif" width="400">
 
 
 **Technical Info:** \
