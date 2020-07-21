@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZHa-kO-fDd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Grid View Controller-->
+        <scene sceneID="ToU-yW-rQH">
+            <objects>
+                <viewController storyboardIdentifier="Grid" id="ZHa-kO-fDd" customClass="GridViewController" customModule="GifPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7lw-Gl-b2a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yN2-ZH-9p6" userLabel="VerticalStack">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dCF-gT-2W0">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="203"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZP6-4x-F6K">
+                                                <rect key="frame" x="0.0" y="0.0" width="136.5" height="203"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
+                                            </imageView>
+                                            <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SA8-c3-u3T">
+                                                <rect key="frame" x="138.5" y="0.0" width="137" height="203"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
+                                            </imageView>
+                                            <imageView tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r36-fT-wC2">
+                                                <rect key="frame" x="277.5" y="0.0" width="136.5" height="203"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="iwt-pH-3wA">
+                                        <rect key="frame" x="0.0" y="205" width="414" height="203"/>
+                                        <subviews>
+                                            <imageView tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4PF-rr-fQb">
+                                                <rect key="frame" x="0.0" y="0.0" width="136.5" height="203"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
+                                            </imageView>
+                                            <imageView tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cnR-xt-Qta">
+                                                <rect key="frame" x="138.5" y="0.0" width="137" height="203"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
+                                            </imageView>
+                                            <imageView tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8pP-bo-spf">
+                                                <rect key="frame" x="277.5" y="0.0" width="136.5" height="203"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eGt-m7-VsK">
+                                        <rect key="frame" x="0.0" y="410" width="414" height="203"/>
+                                        <subviews>
+                                            <imageView tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UEe-JO-daI">
+                                                <rect key="frame" x="0.0" y="0.0" width="136.5" height="203"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
+                                            </imageView>
+                                            <imageView tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Xv-jY-Xh1">
+                                                <rect key="frame" x="138.5" y="0.0" width="137" height="203"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
+                                            </imageView>
+                                            <imageView tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Jn-Bi-bdE">
+                                                <rect key="frame" x="277.5" y="0.0" width="136.5" height="203"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="IiV-1N-lh2">
+                                        <rect key="frame" x="0.0" y="615" width="414" height="203"/>
+                                        <subviews>
+                                            <imageView tag="9" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LKE-YL-mIh">
+                                                <rect key="frame" x="0.0" y="0.0" width="136.5" height="203"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
+                                            </imageView>
+                                            <imageView tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bqn-X1-dpH">
+                                                <rect key="frame" x="138.5" y="0.0" width="137" height="203"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
+                                            </imageView>
+                                            <imageView tag="11" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zIW-yB-uKP">
+                                                <rect key="frame" x="277.5" y="0.0" width="136.5" height="203"/>
+                                                <color key="backgroundColor" name="AccentColor "/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sYM-IE-bR0"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AccentColor "/>
+                        <constraints>
+                            <constraint firstItem="yN2-ZH-9p6" firstAttribute="leading" secondItem="sYM-IE-bR0" secondAttribute="leading" id="9Xj-nQ-iPY"/>
+                            <constraint firstItem="yN2-ZH-9p6" firstAttribute="trailing" secondItem="sYM-IE-bR0" secondAttribute="trailing" id="ES4-1h-kuW"/>
+                            <constraint firstItem="sYM-IE-bR0" firstAttribute="bottom" secondItem="yN2-ZH-9p6" secondAttribute="bottom" id="HG8-N2-QlN"/>
+                            <constraint firstItem="yN2-ZH-9p6" firstAttribute="top" secondItem="sYM-IE-bR0" secondAttribute="top" id="wPK-UL-eNE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="zwJ-PM-r7F">
+                        <imageReference key="image" image="square.grid.3x3.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outletCollection property="gifs" destination="ZP6-4x-F6K" collectionClass="NSMutableArray" id="g5S-LL-QiJ"/>
+                        <outletCollection property="gifs" destination="SA8-c3-u3T" collectionClass="NSMutableArray" id="J6V-aj-UDX"/>
+                        <outletCollection property="gifs" destination="r36-fT-wC2" collectionClass="NSMutableArray" id="1vH-Cr-MCK"/>
+                        <outletCollection property="gifs" destination="4PF-rr-fQb" collectionClass="NSMutableArray" id="uNY-tb-K1M"/>
+                        <outletCollection property="gifs" destination="cnR-xt-Qta" collectionClass="NSMutableArray" id="6l5-ir-g5M"/>
+                        <outletCollection property="gifs" destination="8pP-bo-spf" collectionClass="NSMutableArray" id="GYx-N9-uB9"/>
+                        <outletCollection property="gifs" destination="UEe-JO-daI" collectionClass="NSMutableArray" id="iDH-pm-f9l"/>
+                        <outletCollection property="gifs" destination="3Xv-jY-Xh1" collectionClass="NSMutableArray" id="8Z8-kl-D7U"/>
+                        <outletCollection property="gifs" destination="5Jn-Bi-bdE" collectionClass="NSMutableArray" id="HFC-4q-DWm"/>
+                        <outletCollection property="gifs" destination="LKE-YL-mIh" collectionClass="NSMutableArray" id="soo-lG-lCq"/>
+                        <outletCollection property="gifs" destination="bqn-X1-dpH" collectionClass="NSMutableArray" id="xzh-6j-6ja"/>
+                        <outletCollection property="gifs" destination="zIW-yB-uKP" collectionClass="NSMutableArray" id="t7c-K2-1FS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mtn-Ve-ZAk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2010.4000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.grid.3x3.fill" catalog="system" width="128" height="112"/>
+        <namedColor name="AccentColor ">
+            <color red="0.42399999499320984" green="0.35600000619888306" blue="0.5910000205039978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
