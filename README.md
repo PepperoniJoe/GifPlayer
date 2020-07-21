@@ -11,9 +11,11 @@ Any GIF file can be dropped into the project to easily create an animated image.
 The player allows the following specifications: the content mode, number of loops, background \
 color(if GIF has transparency), speed of animation and the image to use as the still image for the GIF. 
 
+
+
 **Keynote**\
 All the example GIF files of this app were created with Apple's Keynote including all artwork\
-and animations. Keynote's shimmer, jiggles and other special effects were used. Keynotes magic moves and\
+and animations. Keynote's shimmer, jiggles and other special effects were used. Keynote's Magic Moves and\
 transitions were used to create endless scrolling landscapes, scrolling song lyrics and animal animations. 
 
 <img src="GitHub-Images/GifPlayer.gif" width="300">
@@ -25,7 +27,7 @@ GIF files, animation, tap gestures, collection views, tab bar controller\
 collection view flow layout, imageview.animationImages, storyboard references\
 data assets, CGImageSourceGetCount, CGImageSourceCreateImageAtIndex\
 UIImage.animatedImage, color assets\
-Apple Keynote animations including Magic Move, rotate, shimmer, bounce, jiggle
+Apple Keynote: Magic Move, rotate, shimmer, bounce, jiggle
 
 
 **See Also:** \
