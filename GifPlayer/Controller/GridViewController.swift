@@ -53,6 +53,11 @@ class GridViewController: UIViewController {
     let tappedGif = gifs[sender?.view?.tag ?? 0]
     tappedGif.isAnimating ? tappedGif.stopAnimating() : tappedGif.startAnimating()
   }
+    
+// Memory Warning
+
+    
+
 }  // end of MultipleViewController
 
 

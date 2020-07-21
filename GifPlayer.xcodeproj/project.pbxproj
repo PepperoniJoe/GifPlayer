@@ -14,7 +14,6 @@
 		932BD4CF24C6A95C001DB280 /* GifPlayer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 932BD4CE24C6A95C001DB280 /* GifPlayer.gif */; };
 		9359CE6A24C2329C00DCD5A1 /* SingleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359CE6924C2329C00DCD5A1 /* SingleCell.swift */; };
 		9384EF3724C42C40005C1D8E /* Gifs.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9384EF3624C42C3F005C1D8E /* Gifs.xcassets */; };
-		9384EF3B24C4E1C0005C1D8E /* Yesterday.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9384EF3A24C4E1C0005C1D8E /* Yesterday.gif */; };
 		9384EF3D24C50F2D005C1D8E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9384EF3C24C50F2D005C1D8E /* LICENSE */; };
 		9384EF3F24C50F33005C1D8E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9384EF3E24C50F33005C1D8E /* README.md */; };
 		938F25A92460D131004A890C /* GIfDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938F25A82460D131004A890C /* GIfDisplay.swift */; };
@@ -34,7 +33,6 @@
 		932BD4CE24C6A95C001DB280 /* GifPlayer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GifPlayer.gif; sourceTree = "<group>"; };
 		9359CE6924C2329C00DCD5A1 /* SingleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCell.swift; sourceTree = "<group>"; };
 		9384EF3624C42C3F005C1D8E /* Gifs.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Gifs.xcassets; sourceTree = "<group>"; };
-		9384EF3A24C4E1C0005C1D8E /* Yesterday.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Yesterday.gif; sourceTree = "<group>"; };
 		9384EF3C24C50F2D005C1D8E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9384EF3E24C50F33005C1D8E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		938F25A82460D131004A890C /* GIfDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIfDisplay.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 			children = (
 				93B46172237110B80088AE41 /* AppData.swift */,
 				9384EF3624C42C3F005C1D8E /* Gifs.xcassets */,
-				9384EF3A24C4E1C0005C1D8E /* Yesterday.gif */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -223,7 +220,6 @@
 				9384EF3724C42C40005C1D8E /* Gifs.xcassets in Resources */,
 				932BD4CD24C69C09001DB280 /* Collection.storyboard in Resources */,
 				93DEEEC7236BC0B200F92D38 /* Main.storyboard in Resources */,
-				9384EF3B24C4E1C0005C1D8E /* Yesterday.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
