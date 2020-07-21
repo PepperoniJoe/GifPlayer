@@ -3,9 +3,15 @@
 [![Language](https://img.shields.io/badge/swift-5.0-orange.svg)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://mit-license.org)
 
-A Swift app that plays GIF files as an animated image. 
+A Swift app that plays GIF files as animated images. 
 
-**Keynote**
+**Description**\
+Any GIF file can be dropped into the project to easily create an animated image. 
+
+The player allows the following specifications: the content mode, number of loops, background \
+color(if GIF has transparency) and the image to use as the still image for the GIF. 
+
+**Keynote**\
 Any gif file can be used. All the gif files of this app were created with Apple's Keynote including all artwork\
 and animations. Keynote's shimmer, jiggles and other special effects were used. Keynotes magic moves and\
 transitions were used to create endless scrolling landscapes, scrolling song lyrics and animal animations. 
@@ -19,7 +25,7 @@ GIF files, animation, tap gestures, collection views, tab bar controller\
 collection view flow layout, imageview.animationImages, storyboard references\
 data assets, CGImageSourceGetCount, CGImageSourceCreateImageAtIndex\
 UIImage.animatedImage, color assets\
-Apple Keynote animations including magic move, rotate, shimmer, bounce, jiggle
+Apple Keynote animations including Magic Move, rotate, shimmer, bounce, jiggle
 
 
 **See Also:** \
@@ -32,5 +38,5 @@ Marcy Vernon [@MarcyVernon](https://twitter.com/MarcyVernon)
 
 
 **License:** \
-"GifPlayer" software is under the MIT license. See [LICENSE](/LICENSE) for more information.
+"GifPlayer" software is under the MIT license. See [LICENSE](/LICENSE) for more information.\
 GIF files and art content Copyright (c) 2020 Marcy Vernon
