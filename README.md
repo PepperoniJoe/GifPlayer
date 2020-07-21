@@ -9,10 +9,10 @@ A Swift app that plays GIF files as animated images.
 Any GIF file can be dropped into the project to easily create an animated image. 
 
 The player allows the following specifications: the content mode, number of loops, background \
-color(if GIF has transparency) and the image to use as the still image for the GIF. 
+color(if GIF has transparency), speed of animation and the image to use as the still image for the GIF. 
 
 **Keynote**\
-Any gif file can be used. All the gif files of this app were created with Apple's Keynote including all artwork\
+All the example GIF files of this app were created with Apple's Keynote including all artwork\
 and animations. Keynote's shimmer, jiggles and other special effects were used. Keynotes magic moves and\
 transitions were used to create endless scrolling landscapes, scrolling song lyrics and animal animations. 
 
