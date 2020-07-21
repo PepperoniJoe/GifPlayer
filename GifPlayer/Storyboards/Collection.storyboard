@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hYD-wT-6uz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="uLx-D7-Izb">
+            <objects>
+                <viewController storyboardIdentifier="Collection" id="hYD-wT-6uz" customClass="CollectionViewController" customModule="GifPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="06B-Z2-tTA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="3" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gus-ww-GPR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RJx-Ei-sFQ">
+                                    <size key="itemSize" width="328" height="618"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="9UG-wN-ePY" customClass="SingleCell" customModule="GifPlayer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="328" height="618"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hZT-O0-cH2">
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="618"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3JF-JD-5lz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="328" height="618"/>
+                                                    <color key="tintColor" name="AccentColor "/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="tintColor" name="AccentColor "/>
+                                            <constraints>
+                                                <constraint firstItem="3JF-JD-5lz" firstAttribute="top" secondItem="hZT-O0-cH2" secondAttribute="top" id="651-lz-2LN"/>
+                                                <constraint firstAttribute="bottom" secondItem="3JF-JD-5lz" secondAttribute="bottom" id="Fgk-zJ-xSe"/>
+                                                <constraint firstItem="3JF-JD-5lz" firstAttribute="leading" secondItem="hZT-O0-cH2" secondAttribute="leading" id="HFb-fj-Kd2"/>
+                                                <constraint firstAttribute="trailing" secondItem="3JF-JD-5lz" secondAttribute="trailing" id="pvC-IS-K4Z"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="tintColor" name="AccentColor "/>
+                                        <size key="customSize" width="328" height="618"/>
+                                        <connections>
+                                            <outlet property="imageviewCell" destination="3JF-JD-5lz" id="YY6-vP-me7"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0aD-NY-zk7">
+                                        <rect key="frame" x="338" y="100" width="328" height="618"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="EFx-pM-13y">
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="618"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="27V-ly-bcg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor "/>
+                        <constraints>
+                            <constraint firstItem="Gus-ww-GPR" firstAttribute="top" secondItem="27V-ly-bcg" secondAttribute="top" id="Hi3-7b-R2s"/>
+                            <constraint firstItem="Gus-ww-GPR" firstAttribute="leading" secondItem="27V-ly-bcg" secondAttribute="leading" id="dbk-yp-It7"/>
+                            <constraint firstItem="Gus-ww-GPR" firstAttribute="bottom" secondItem="27V-ly-bcg" secondAttribute="bottom" id="grM-qE-KB1"/>
+                            <constraint firstItem="Gus-ww-GPR" firstAttribute="trailing" secondItem="27V-ly-bcg" secondAttribute="trailing" id="tzh-uR-bRK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="square.fill" catalog="system" id="7Ep-xs-cMW"/>
+                    <navigationItem key="navigationItem" id="md6-zd-MDI"/>
+                    <connections>
+                        <outlet property="collectionViewGifs" destination="Gus-ww-GPR" id="dHA-kf-olZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vw4-YP-dEb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336.8" y="838.83058470764627"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="AccentColor ">
+            <color red="0.42399999499320984" green="0.35600000619888306" blue="0.5910000205039978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
