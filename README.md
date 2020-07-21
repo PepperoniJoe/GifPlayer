@@ -17,7 +17,7 @@ All the example GIF files of this app were created with Apple's Keynote includin
 and animations. Keynote's shimmer, jiggles and other special effects were used. Keynote's Magic Moves and\
 transitions were used to create endless scrolling landscapes, scrolling song lyrics and animal animations. 
 
-<img src="GitHub-Images/GifPlayer.gif" width="500">
+<img src="GitHub-Images/GifPlayer.gif" width="600">
 
 
 **Technical Info:** \
